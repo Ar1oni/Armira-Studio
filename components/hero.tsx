@@ -1,6 +1,10 @@
-'use client'
+"use client"
+
+import { useLanguage } from "@/lib/language-context"
 
 export function Hero() {
+  const { t } = useLanguage()
+
   return (
     <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 mt-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -8,30 +12,34 @@ export function Hero() {
         <div className="space-y-6 animate-fade-in">
           <div className="space-y-4">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-bold leading-tight text-foreground text-balance">
-              Elevate Your Look with <span className="text-primary">Perfect Brows</span>
+              {t("hero.title1")} <span className="text-primary">{t("hero.title2")}</span>
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-md">
-              Expert eyebrow design and shaping. Transform your appearance with precision artistry and personalized styling.
-            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-md">{t("hero.description")}</p>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#contact" className="bg-primary text-primary-foreground px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-all inline-block text-center">
-              Book Now
+            <a
+              href="#contact"
+              className="bg-primary text-primary-foreground px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-all inline-block text-center"
+            >
+              {t("hero.bookNow")}
             </a>
-            <a href="#gallery" className="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transition-all inline-block text-center">
-              View Gallery
+            <a
+              href="#gallery"
+              className="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transition-all inline-block text-center"
+            >
+              {t("hero.viewGallery")}
             </a>
           </div>
 
           <div className="flex gap-8 pt-4">
             <div>
               <p className="text-3xl font-display font-bold text-primary">500+</p>
-              <p className="text-muted-foreground">Happy Clients</p>
+              <p className="text-muted-foreground">{t("hero.clients")}</p>
             </div>
             <div>
               <p className="text-3xl font-display font-bold text-primary">10+</p>
-              <p className="text-muted-foreground">Years Experience</p>
+              <p className="text-muted-foreground">{t("hero.experience")}</p>
             </div>
           </div>
         </div>

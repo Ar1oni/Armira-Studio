@@ -1,38 +1,41 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
+import type React from "react"
+
+import { useState } from "react"
+import { useLanguage } from "@/lib/language-context"
 
 export function ContactSection() {
+  const { t } = useLanguage()
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: 'eyebrow-design',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    service: "eyebrow-design",
+    message: "",
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    // Simulate form submission
+
     setTimeout(() => {
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', phone: '', service: 'eyebrow-design', message: '' })
+      setSubmitStatus("success")
+      setFormData({ name: "", email: "", phone: "", service: "eyebrow-design", message: "" })
       setIsSubmitting(false)
-      
-      setTimeout(() => setSubmitStatus('idle'), 3000)
+
+      setTimeout(() => setSubmitStatus("idle"), 3000)
     }, 1000)
   }
 
@@ -40,54 +43,51 @@ export function ContactSection() {
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-display font-bold text-foreground mb-4">
-            Get in Touch
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Ready to transform your brows? Contact us to schedule your appointment.
-          </p>
+          <h2 className="text-4xl sm:text-5xl font-display font-bold text-foreground mb-4">{t("contact.title")}</h2>
+          <p className="text-lg text-muted-foreground">{t("contact.description")}</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-display font-bold text-foreground mb-2">📍 Location</h3>
-              <p className="text-muted-foreground">123 Beauty Lane, Studio City, CA 90001</p>
+              <h3 className="text-lg font-display font-bold text-foreground mb-2">📍 {t("contact.location")}</h3>
+              <p className="text-muted-foreground">{t("contact.locationText")}</p>
             </div>
             <div>
-              <h3 className="text-lg font-display font-bold text-foreground mb-2">📱 Phone</h3>
+              <h3 className="text-lg font-display font-bold text-foreground mb-2">📱 {t("contact.phone")}</h3>
               <a href="tel:+1234567890" className="text-primary hover:text-secondary transition-colors">
                 (123) 456-7890
               </a>
             </div>
             <div>
-              <h3 className="text-lg font-display font-bold text-foreground mb-2">📧 Email</h3>
+              <h3 className="text-lg font-display font-bold text-foreground mb-2">📧 {t("contact.email")}</h3>
               <a href="mailto:hello@armira.studio" className="text-primary hover:text-secondary transition-colors">
                 hello@armira.studio
               </a>
             </div>
             <div>
-              <h3 className="text-lg font-display font-bold text-foreground mb-4">⏰ Hours</h3>
+              <h3 className="text-lg font-display font-bold text-foreground mb-4">⏰ {t("contact.hours")}</h3>
               <div className="space-y-1 text-muted-foreground text-sm">
-                <p>Monday - Friday: 10am - 6pm</p>
-                <p>Saturday: 10am - 4pm</p>
-                <p>Sunday: Closed</p>
+                <p>{t("contact.mondayFriday")}</p>
+                <p>{t("contact.saturday")}</p>
+                <p>{t("contact.sunday")}</p>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="lg:col-span-2 space-y-6 bg-muted p-8 rounded-xl">
-            {submitStatus === 'success' && (
+            {submitStatus === "success" && (
               <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
-                ✓ Thank you! We'll be in touch soon.
+                ✓ {t("contact.success")}
               </div>
             )}
 
             <div>
               <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
-                Name *
+                {t("contact.name")}
+                {t("contact.required")}
               </label>
               <input
                 type="text"
@@ -97,14 +97,15 @@ export function ContactSection() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-card text-foreground"
-                placeholder="Your name"
+                placeholder={t("contact.namePlaceholder")}
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
-                  Email *
+                  {t("contact.emailLabel")}
+                  {t("contact.required")}
                 </label>
                 <input
                   type="email"
@@ -114,13 +115,13 @@ export function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-card text-foreground"
-                  placeholder="your@email.com"
+                  placeholder={t("contact.emailPlaceholder")}
                 />
               </div>
 
               <div>
                 <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
-                  Phone
+                  {t("contact.phoneLabel")}
                 </label>
                 <input
                   type="tel"
@@ -129,14 +130,15 @@ export function ContactSection() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-card text-foreground"
-                  placeholder="(123) 456-7890"
+                  placeholder={t("contact.phonePlaceholder")}
                 />
               </div>
             </div>
 
             <div>
               <label htmlFor="service" className="block text-sm font-semibold text-foreground mb-2">
-                Interested Service *
+                {t("contact.service")}
+                {t("contact.required")}
               </label>
               <select
                 id="service"
@@ -145,17 +147,17 @@ export function ContactSection() {
                 onChange={handleChange}
                 className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-card text-foreground"
               >
-                <option value="eyebrow-design">Brow Design</option>
-                <option value="microblading">Microblading</option>
-                <option value="brow-tinting">Brow Tinting</option>
-                <option value="brow-threading">Brow Threading</option>
-                <option value="consultation">Free Consultation</option>
+                <option value="eyebrow-design">{t("contact.services.eyebrow-design")}</option>
+                <option value="microblading">{t("contact.services.microblading")}</option>
+                <option value="brow-tinting">{t("contact.services.brow-tinting")}</option>
+                <option value="brow-threading">{t("contact.services.brow-threading")}</option>
+                <option value="consultation">{t("contact.services.consultation")}</option>
               </select>
             </div>
 
             <div>
               <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
-                Message
+                {t("contact.message")}
               </label>
               <textarea
                 id="message"
@@ -164,7 +166,7 @@ export function ContactSection() {
                 onChange={handleChange}
                 rows={4}
                 className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-card text-foreground resize-none"
-                placeholder="Tell us about your brow goals..."
+                placeholder={t("contact.messagePlaceholder")}
               />
             </div>
 
@@ -173,7 +175,7 @@ export function ContactSection() {
               disabled={isSubmitting}
               className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:opacity-90 disabled:opacity-50 transition-all"
             >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
+              {isSubmitting ? t("contact.sending") : t("contact.send")}
             </button>
           </form>
         </div>
