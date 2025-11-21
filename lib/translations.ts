@@ -81,73 +81,73 @@ export const translations = {
       copyright: "All rights reserved.",
     },
   },
-  alb: {
+   alb: {
     nav: {
       services: "Shërbimet",
       gallery: "Galeria",
       contact: "Kontakti",
     },
     hero: {
-      title1: "Ngriti Parimin Tuaj me",
+      title1: "Ngrit Pamjen Tuaj me",
       title2: "Vetulla të Përsosura",
       description:
-        "Dizajn i ekspertëve i vetullave dhe formësim. Transformoni pamjen tuaj me precizion artistik dhe stilizim personal.",
-      bookNow: "Rezervoni Tani",
-      viewGallery: "Shikoni Galeriën",
-      clients: "Klientët e Lumtur",
-      experience: "Vite Përvojë",
+        "Dizajn profesional dhe formësim i vetullave. Transformoni pamjen tuaj me art dhe stil personal.",
+      bookNow: "Rezervo Tani",
+      viewGallery: "Shiko Galerinë",
+      clients: "Klientë të Kënaqur",
+      experience: "Vite Eksperience",
     },
     services: {
       title: "Shërbimet Tona",
       description:
-        "Nga formësimi deri te microblading, ne ofrojmë zgjidhje të plota për vetulla të përshtatura sipas nevojave tuaja unike.",
+        "Nga formësimi klasik deri te microblading, ofrojmë zgjidhje të plota për vetulla, të përshtatura sipas nevojave tuaja.",
       services: [
         {
           title: "Dizajn Vetullash",
           description:
-            "Dizajn personal i vetullave i përshtatur formës së fytyrës tuaj dhe veçorive. Analizojmë tiparet tuaja unike për të krijuar harqin dhe përcaktimin e përsosur.",
+            "Dizajn personal i vetullave, i përshtatur me formën e fytyrës dhe veçoritë tuaja. Krijojmë harkun dhe përcaktimin perfekt për një pamje natyrale dhe të harmonishme.",
         },
         {
           title: "Microblading",
           description:
-            "Përmirësim gjysmë i përhershëm i vetullave për vetulla të përcaktuara me përsosje. Krijon një pamje natyrale si flokë që zgjat 18-24 muaj.",
+            "Përmirësim gjysmë i përhershëm i vetullave për vetulla të përcaktuara dhe natyrale. Rezultati zgjat 18-24 muaj dhe duket shumë i natyrshëm.",
         },
         {
           title: "Ngjyrosje Vetullash",
           description:
-            "Ngjyrosje profesionale e vetullave për të përmirësuar përcaktimin dhe thellësinë. Zgjidhni nga pjenë kuruar për të plotësuar ngjyrën tuaj.",
+            "Ngjyrosje profesionale për theksimin dhe thellësinë e vetullave. Zgjidhni nga një gamë ngjyrash të kuruara për të përshtatur pamjen tuaj.",
         },
         {
           title: "Fije Vetullash",
           description:
-            "Heqje precize e flokëve duke përdorur teknikën tradicionale të fijeve. Heqje pa dhimbje e flokëve delikat për vetulla të pastra dhe të përcaktuara.",
+            "Heqje e hollë dhe precize e qimeve me teknikën tradicionale të fijeve. Siguron vetulla të pastra dhe të përcaktuara pa dhimbje.",
         },
       ],
       learnMore: "Mëso Më Shumë →",
     },
     contact: {
       title: "Na Kontaktoni",
-      description: "Gati të transformoni vetullat tuaja? Kontaktoni ne për të planifikuar takimin tuaj.",
+      description: "Gati të transformoni vetullat tuaja? Na kontaktoni për të rezervuar takimin tuaj.",
       location: "Vendndodhja",
       locationText: "Rruga 123 Beauty Lane, Studio City, CA 90001",
       phone: "Telefoni",
       email: "Email",
       hours: "Orari",
-      mondayFriday: "E hënë - E premte: 10am - 6pm",
-      saturday: "E shtunë: 10am - 4pm",
-      sunday: "E diel: E mbyllur",
+      mondayFriday: "E hënë - E premte: 10:00 - 18:00",
+      saturday: "E shtunë: 10:00 - 16:00",
+      sunday: "E diel: Mbyllur",
       name: "Emri",
       emailLabel: "Email",
       phoneLabel: "Telefoni",
-      service: "Shërbimi i Interesimit",
+      service: "Shërbimi i Zgjedhur",
       message: "Mesazhi",
       namePlaceholder: "Emri juaj",
       emailPlaceholder: "juaji@email.com",
       phonePlaceholder: "(123) 456-7890",
-      messagePlaceholder: "Na tërhiqni për qëllimet tuaja të vetullave...",
+      messagePlaceholder: "Na tregoni qëllimet tuaja për vetullat...",
       send: "Dërgo Mesazhin",
       sending: "Duke dërguar...",
-      success: "Faleminderit! Do të jemi në kontakt së shpejti.",
+      success: "Faleminderit! Do t'ju kontaktojmë së shpejti.",
       required: " *",
       services: {
         "eyebrow-design": "Dizajn Vetullash",
@@ -158,7 +158,7 @@ export const translations = {
       },
     },
     footer: {
-      description: "Ngritje vetullash me precizion artistik dhe stilizim personal që nga 2014.",
+      description: "Vetulla të përsosura me art dhe stil personal që nga viti 2014.",
       quickLinks: "Lidhje të Shpejta",
       followUs: "Ndiqni Ne",
       copyright: "Të gjitha të drejtat e rezervuara.",
