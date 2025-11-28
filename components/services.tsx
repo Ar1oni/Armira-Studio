@@ -7,7 +7,7 @@ export function Services() {
   const { language, t } = useLanguage();
   const services = translations[language].services.services;
 
-  const icons = ["✨", "🎨", "💄", "✂️"]; // FIX
+const icons = ["🎨", "✒️", "🪄", "🧵", "🖌️", "✨"];
 
   return (
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">

@@ -24,6 +24,9 @@ export function Header() {
           <Link href="#gallery" className="text-foreground hover:text-primary transition-colors">
             {t("nav.gallery")}
           </Link>
+          <Link href="#courses" className="text-foreground hover:text-primary transition-colors">
+            {t("nav.courses")}
+          </Link>
           <Link
             href="#contact"
             className="bg-primary text-primary-foreground px-6 py-2 rounded-full hover:opacity-90 transition-all"
@@ -66,6 +69,9 @@ export function Header() {
             </Link>
             <Link href="#gallery" className="block text-foreground hover:text-primary">
               {t("nav.gallery")}
+            </Link>
+            <Link href="#courses" className="block text-foreground hover:text-primary">
+              {t("nav.courses")}
             </Link>
             <Link
               href="#contact"

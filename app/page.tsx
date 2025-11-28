@@ -5,8 +5,10 @@ import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
 import { Gallery } from "@/components/gallery"
+import { Courses } from "@/components/courses"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import { LocationSection } from "@/components/locationSection"
 
 export default function Home() {
   return (
@@ -16,7 +18,9 @@ export default function Home() {
         <Hero />
         <Services />
         <Gallery />
+        <Courses />
         <ContactSection />
+        <LocationSection />
         <Footer />
       </main>
     </LanguageProvider>
