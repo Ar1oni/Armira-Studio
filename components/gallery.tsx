@@ -23,13 +23,7 @@ const serviceGalleries = {
     { id: 10, src: "/brow-tinting-result-2.jpg" },
     { id: 11, src: "/brow-tinting-result-3.jpg" },
     { id: 12, src: "/brow-tinting-result-4.jpg" },
-  ],
-  browThreading: [
-    { id: 13, src: "/brow-threading-result-1.jpg" },
-    { id: 14, src: "/brow-threading-result-2.jpg" },
-    { id: 15, src: "/brow-threading-result-3.jpg" },
-    { id: 16, src: "/brow-threading-result-4.jpg" },
-  ],
+  ]
 }
 
 type ServiceKey = keyof typeof serviceGalleries
@@ -75,7 +69,6 @@ export function Gallery() {
     browDesign: t("gallery.tabs.browDesign"),
     microblading: t("gallery.tabs.microblading"),
     browTinting: t("gallery.tabs.browTinting"),
-    browThreading: t("gallery.tabs.browThreading"),
   }
 
   return (
