@@ -66,6 +66,10 @@ export const translations = {
         browThreading: "Brow Threading",
       },
     },
+    videos: {
+      title: "See us in action",
+      subtitle: "Working and teaching",
+    },
     courses: {
       title: "Professional Courses & Training",
       description:
@@ -132,29 +136,22 @@ export const translations = {
       followUs: "Follow Us",
       copyright: "All rights reserved.",
     },
-
-    // ←←← NEW LOCATION SECTION (English) ←←←
     location: {
       title: "Find Us",
       description: "We are waiting for you in the heart of the city — come and discover the art of perfect brows",
       mapTitle: "Our studio location",
       visitTitle: "Visit Our Studio",
       visitSubtitle: "We’re easy to find",
-
       salonName: "Your Salon Name",
       address: "123 Beauty Street, Floor 2<br />10000 City, Country",
-
       phoneLabel: "Phone",
       phoneDisplay: "+1 (234) 567-890",
       phoneLink: "tel:+1234567890",
-
       emailLabel: "Email",
       emailDisplay: "hello@yoursalon.com",
       emailLink: "mailto:hello@yoursalon.com",
-
       hoursLabel: "Opening Hours",
       hours: "Mon–Fri: 9:00 – 19:00<br />Sat: 10:00 – 17:00<br />Sun: Closed",
-
       bookButton: "Book Your Visit Now",
     },
   },
@@ -226,6 +223,10 @@ export const translations = {
         browThreading: "Fije Vetullash",
       },
     },
+    videos: {
+      title: "Na shikoni në punë",
+      subtitle: "Duke punuar dhe duke mësuar",
+    },
     courses: {
       title: "Trajnime dhe Kurse Profesionale",
       description:
@@ -292,29 +293,22 @@ export const translations = {
       followUs: "Ndiqni Ne",
       copyright: "Të gjitha të drejtat e rezervuara.",
     },
-
-    // ←←← NEW LOCATION SECTION (Albanian) ←←←
     location: {
       title: "Na Gjeni",
       description: "Ju presim në zemër të qytetit — ejani të zbuloni artin e vetullave perfekte",
       mapTitle: "Vendndodhja e studios sonë",
       visitTitle: "Vizitoni Studion Tonë",
       visitSubtitle: "Na gjeni lehtësisht",
-
       salonName: "Emri i Salonit Tuaj",
       address: "Rruga Beauty 123, Kati 2<br />10000 Qyteti, Shqipëri",
-
       phoneLabel: "Telefoni",
       phoneDisplay: "+355 69 123 4567",
       phoneLink: "tel:+355691234567",
-
       emailLabel: "Email",
       emailDisplay: "hello@yoursalon.com",
       emailLink: "mailto:hello@yoursalon.com",
-
       hoursLabel: "Orari i Punës",
       hours: "E hënë–E premte: 09:00 – 19:00<br />E shtunë: 10:00 – 17:00<br />E diel: Mbyllur",
-
       bookButton: "Rezervo Tani",
     },
   },

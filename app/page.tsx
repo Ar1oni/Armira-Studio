@@ -9,6 +9,7 @@ import { Courses } from "@/components/courses"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { LocationSection } from "@/components/locationSection"
+import { VideoSection } from "@/components/video-section"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Gallery />
+        <VideoSection />
         <Courses />
         <ContactSection />
         <LocationSection />
