@@ -119,7 +119,7 @@ export function LocationSection() {
             {/* Book Button */}
             <a
               href="#contact"
-              className="mt-8 block w-full text-center py-4 bg-gold text-cream font-medium rounded-xl hover:bg-amber-600 transition shadow-lg"
+              className="mt-8 block w-full text-center py-4 bg-gold text-cream font-medium rounded-xl hover:bg-black hover:text-white transition shadow-lg"
             >
               {location.bookButton}
             </a>

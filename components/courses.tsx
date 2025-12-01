@@ -77,9 +77,6 @@ export function Courses() {
                   </div>
 
                   {/* Custom Button (no shadcn) */}
-                  <button className="px-4 py-2 text-sm font-medium text-gold border border-gold rounded-md hover:bg-gold hover:text-cream transition-colors">
-                    {t("courses.learnMore")}
-                  </button>
                 </div>
               </div>
             </div>

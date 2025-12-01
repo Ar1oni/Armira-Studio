@@ -36,13 +36,6 @@ const icons = ["🎨", "✒️", "🪄", "🧵", "🖌️", "✨"];
               <p className="text-muted-foreground leading-relaxed">
                 {service.description}
               </p>
-
-              <a
-                href="#contact"
-                className="mt-4 inline-block text-primary font-semibold hover:text-secondary transition-colors"
-              >
-                {t("services.learnMore")}
-              </a>
             </div>
           ))}
         </div>
