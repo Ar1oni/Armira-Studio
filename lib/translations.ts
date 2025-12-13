@@ -1,3 +1,8 @@
+// 
+
+
+
+
 export const translations = {
   en: {
     nav: {
@@ -70,6 +75,8 @@ export const translations = {
       title: "See us in action",
       subtitle: "Working and teaching",
     },
+
+    // ⭐ UPDATED COURSES SECTION ⭐
     courses: {
       title: "Professional Courses & Training",
       description:
@@ -77,32 +84,27 @@ export const translations = {
       learnMore: "Learn More",
       certificate: "Certificate Included",
       smallGroups: "Small Groups",
-      courses: [
-        {
-          title: "Microblading Masterclass",
-          description:
-            "Complete training in microblading technique. Learn everything from color theory to stroke patterns and client consultation.",
-          duration: "5 Days",
-        },
-        {
-          title: "Brow Design Fundamentals",
-          description:
-            "Master the art of brow shaping and design. Perfect for beginners who want to start a career in beauty.",
-          duration: "3 Days",
-        },
-        {
-          title: "Advanced Techniques Workshop",
-          description:
-            "Take your skills to the next level with advanced shading, ombre brows, and combination techniques.",
-          duration: "2 Days",
-        },
-      ],
+
+      individual: {
+        title: "Individual Course",
+        description:
+          "One-on-one training fully tailored to your level, pace, and goals. Perfect for students who want maximum attention and fast progress.",
+        duration: "Flexible – 1:1 schedule",
+      },
+
+      group: {
+        title: "Small Group Course",
+        description:
+          "Learn together in an intimate group setting with plenty of hands-on practice and feedback. Ideal for friends or colleagues training together.",
+        duration: "Fixed dates – small groups",
+      },
     },
+
     contact: {
       title: "Get in Touch",
       description: "Ready to transform your brows? Contact us to schedule your appointment.",
       location: "Location",
-      locationText: "123 Beauty Lane, Studio City, CA 90001",
+      locationText: "Rd. Kerem Lëton - Prishtine (Close to Rd. Muharrem Fejza)",
       phone: "Phone",
       email: "Email",
       hours: "Hours",
@@ -116,7 +118,7 @@ export const translations = {
       message: "Message",
       namePlaceholder: "Your name",
       emailPlaceholder: "your@email.com",
-      phonePlaceholder: "(123) 456-7890",
+      phonePlaceholder: "+383 (0) 49 855 652",
       messagePlaceholder: "Tell us about your brow goals...",
       send: "Send Message",
       sending: "Sending...",
@@ -130,26 +132,28 @@ export const translations = {
         consultation: "Free Consultation",
       },
     },
+
     footer: {
       description: "Elevating brows with precision artistry and personalized styling since 2014.",
       quickLinks: "Quick Links",
       followUs: "Follow Us",
       copyright: "All rights reserved.",
     },
+
     location: {
       title: "Find Us",
       description: "We are waiting for you in the heart of the city — come and discover the art of perfect brows",
       mapTitle: "Our studio location",
       visitTitle: "Visit Our Studio",
       visitSubtitle: "We’re easy to find",
-      salonName: "Your Salon Name",
-      address: "123 Beauty Street, Floor 2<br />10000 City, Country",
+      salonName: "Brows by Armira Studio",
+      address: "Rd. Kerem Lëton - Prishtine (Close to Rd. Muharrem Fejza)",
       phoneLabel: "Phone",
-      phoneDisplay: "+1 (234) 567-890",
-      phoneLink: "tel:+1234567890",
+      phoneDisplay: "+383 (0) 49 855 652",
+      phoneLink: "tel:+383 (0) 49 855 652",
       emailLabel: "Email",
-      emailDisplay: "hello@yoursalon.com",
-      emailLink: "mailto:hello@yoursalon.com",
+      emailDisplay: "malokajarmira@gmail.com",
+      emailLink: "mailto:malokajarmira@gmail.com",
       hoursLabel: "Opening Hours",
       hours: "Mon–Fri: 9:00 – 19:00<br />Sat: 10:00 – 17:00<br />Sun: Closed",
       bookButton: "Book Your Visit Now",
@@ -157,164 +161,163 @@ export const translations = {
   },
 
   // ——————————————————————— ALBANIAN ———————————————————————
-alb: {
-  nav: {
-    services: "Shërbimet",
-    gallery: "Galeria",
-    courses: "Trajnimet",
-    contact: "Kontakti",
-  },
-  hero: {
-    title1: "Ngriteni pamjen tuaj me",
-    title2: "Vetulla të Përsosura",
-    description:
-      "Dizajnim dhe formësim profesional të vetullave. Transformoni pamjen tuaj me teknikë të saktë dhe stil të personalizuar.",
-    bookNow: "Rezervo Tani",
-    viewGallery: "Shiko Galerinë",
-    clients: "Klientë të Kënaqur",
-    experience: "Vite Përvojë",
-  },
-  services: {
-    title: "Shërbimet Tona",
-    description:
-      "Nga formësimi klasik deri te trajtimet gjysmë të përhershme, ofrojmë zgjidhje të plota për vetulla të përshtatura posaçërisht për ju.",
-    learnMore: "Mëso Më Shumë →",
-    services: [
-      {
-        title: "Dizajn i Vetullave",
-        description:
-          "Dizajn i personalizuar i vetullave sipas formës së fytyrës dhe tipareve tuaja. Krijojmë harkun dhe balancën perfekte për një pamje natyrale.",
-      },
-      {
-        title: "Microblading",
-        description:
-          "Teknikë gjysmë e përhershme që krijon goditje natyrale si fije qimesh, për vetulla të definuara dhe të harmonizuara që zgjasin 18–24 muaj.",
-      },
-      {
-        title: "Ngjyrosje e Vetullave",
-        description:
-          "Ngjyrosje profesionale që thekson dhe shton thellësi. Mund të zgjidhni ngjyrën ideale për stilin dhe tiparet tuaja.",
-      },
-      {
-        title: "Formësim me Fije",
-        description:
-          "Heqje shumë e saktë e qimeve me teknikën tradicionale të fijeve. Lë vetulla të pastra dhe të rregulluara në mënyrë perfekte.",
-      },
-      {
-        title: "Phishading (Vetulla me Efekt Pluhuri)",
-        description:
-          "Teknikë gjysmë e përhershme e hijesimit që jep efekt të butë ombré dhe vetulla më të plota. Ideale për një pamje si me makeup.",
-      },
-      {
-        title: "Laminim i Vetullave",
-        description:
-          "Trajtim që rregullon, drejton dhe jep volum qimeve të vetullave. Siguron pamje të rregullt, të plotë dhe të stilizuar për disa javë.",
-      },
-    ],
-  },
-  gallery: {
-    title: "Punimet Tona",
-    description:
-      "Shikoni transformimet tona më të fundit dhe rezultatet reale tek klientët tanë. Klikoni mbi foto për të parë galerinë e plotë.",
-    clickToView: "Kliko për të parë",
-    tabs: {
-      browDesign: "Dizajn i Vetullave",
-      microblading: "Microblading",
-      browTinting: "Ngjyrosje Vetullash",
-      browThreading: "Formësim me Fije",
+
+  alb: {
+    nav: {
+      services: "Shërbimet",
+      gallery: "Galeria",
+      courses: "Trajnimet",
+      contact: "Kontakti",
     },
-  },
-  videos: {
-    title: "Na shikoni në veprim",
-    subtitle: "Punë dhe trajnim",
-  },
-  courses: {
-    title: "Kurse & Trajnime Profesionale",
-    description:
-      "Mësoni nga ekspertët dhe nisni karrierën tuaj në artin e vetullave. Ofrojmë programe të plota për çdo nivel.",
-    learnMore: "Mëso Më Shumë",
-    certificate: "Certifikatë e Përfshirë",
-    smallGroups: "Grupe të Vogla",
-    courses: [
-      {
-        title: "Masterclass Microblading",
-        description:
-          "Trajnim i plotë për teknikën e microblading — nga teoria e ngjyrave deri te modelet e linjave dhe konsultimi me klientin.",
-        duration: "5 Ditë",
-      },
-      {
-        title: "Bazat e Dizajnit të Vetullave",
-        description:
-          "Mësoni teknikat themelore të formësimit dhe dizajnimit të vetullave. Ideal për fillestarë.",
-        duration: "3 Ditë",
-      },
-      {
-        title: "Workshop Teknikash të Avancuara",
-        description:
-          "Trajnim profesional me teknika të avancuara: shading, ombré brows dhe metoda të kombinuara.",
-        duration: "2 Ditë",
-      },
-    ],
-  },
-  contact: {
-    title: "Na Kontaktoni",
-    description:
-      "Gati për të transformuar vetullat tuaja? Kontaktoni për të rezervuar takimin.",
-    location: "Adresa",
-    locationText: "Rruga Beauty 123, Studio City, CA 90001",
-    phone: "Telefoni",
-    email: "Email",
-    hours: "Orari",
-    mondayFriday: "E hënë - E premte: 10:00 - 18:00",
-    saturday: "E shtunë: 10:00 - 16:00",
-    sunday: "E diel: Mbyllur",
-    name: "Emri",
-    emailLabel: "Email",
-    phoneLabel: "Telefoni",
-    service: "Shërbimi i dëshiruar",
-    message: "Mesazhi",
-    namePlaceholder: "Emri juaj",
-    emailPlaceholder: "juaji@email.com",
-    phonePlaceholder: "(123) 456-7890",
-    messagePlaceholder: "Na tregoni çfarë rezultati kërkoni...",
-    send: "Dërgo Mesazhin",
-    sending: "Duke dërguar...",
-    success: "Faleminderit! Do t'ju kontaktojmë së shpejti.",
-    required: " *",
+    hero: {
+      title1: "Ngriteni pamjen tuaj me",
+      title2: "Vetulla të Përsosura",
+      description:
+        "Dizajnim dhe formësim profesional të vetullave. Transformoni pamjen tuaj me teknikë të saktë dhe stil të personalizuar.",
+      bookNow: "Rezervo Tani",
+      viewGallery: "Shiko Galerinë",
+      clients: "Klientë të Kënaqur",
+      experience: "Vite Përvojë",
+    },
     services: {
-      "eyebrow-design": "Dizajn i Vetullave",
-      microblading: "Microblading",
-      "brow-tinting": "Ngjyrosje Vetullash",
-      "brow-threading": "Formësim me Fije",
-      consultation: "Konsultim Falas",
+      title: "Shërbimet Tona",
+      description:
+        "Nga formësimi klasik deri te trajtimet gjysmë të përhershme, ofrojmë zgjidhje të plota për vetulla të përshtatura posaçërisht për ju.",
+      learnMore: "Mëso Më Shumë →",
+      services: [
+        {
+          title: "Dizajn i Vetullave",
+          description:
+            "Dizajn i personalizuar i vetullave sipas formës së fytyrës dhe tipareve tuaja. Krijojmë harkun dhe balancën perfekte për një pamje natyrale.",
+        },
+        {
+          title: "Microblading",
+          description:
+            "Teknikë gjysmë e përhershme që krijon goditje natyrale si fije qimesh, për vetulla të definuara dhe të harmonizuara që zgjasin 18–24 muaj.",
+        },
+        {
+          title: "Ngjyrosje e Vetullave",
+          description:
+            "Ngjyrosje profesionale që thekson dhe shton thellësi. Mund të zgjidhni ngjyrën ideale për stilin dhe tiparet tuaja.",
+        },
+        {
+          title: "Formësim me Fije",
+          description:
+            "Heqje shumë e saktë e qimeve me teknikën tradicionale të fijeve. Lë vetulla të pastra dhe të rregulluara në mënyrë perfekte.",
+        },
+        {
+          title: "Phishading (Vetulla me Efekt Pluhuri)",
+          description:
+            "Teknikë gjysmë e përhershme e hijesimit që jep efekt të butë ombré dhe vetulla më të plota. Ideale për një pamje si me makeup.",
+        },
+        {
+          title: "Laminim i Vetullave",
+          description:
+            "Trajtim që rregullon, drejton dhe jep volum qimeve të vetullave. Siguron pamje të rregullt, të plotë dhe të stilizuar për disa javë.",
+        },
+      ],
     },
-  },
-  footer: {
-    description: "Duke krijuar vetulla të përsosura me art dhe stil të personalizuar që nga viti 2014.",
-    quickLinks: "Lidhje të Shpejta",
-    followUs: "Na Ndiqni",
-    copyright: "Të gjitha të drejtat e rezervuara.",
-  },
-  location: {
-    title: "Na Gjeni",
-    description:
-      "Jemi në zemër të qytetit — ejani dhe zbuloni artin e vetullave perfekte.",
-    mapTitle: "Vendndodhja jonë",
-    visitTitle: "Vizitoni Studion",
-    visitSubtitle: "Na gjeni lehtë",
-    salonName: "Emri i Salonit",
-    address: "Rruga Beauty 123, Kati 2<br />10000 Qyteti, Shqipëri",
-    phoneLabel: "Telefoni",
-    phoneDisplay: "+355 69 123 4567",
-    phoneLink: "tel:+355691234567",
-    emailLabel: "Email",
-    emailDisplay: "hello@yoursalon.com",
-    emailLink: "mailto:hello@yoursalon.com",
-    hoursLabel: "Orari i Punës",
-    hours:
-      "E hënë–E premte: 09:00 – 19:00<br />E shtunë: 10:00 – 17:00<br />E diel: Mbyllur",
-    bookButton: "Rezervo Vizitën",
+    gallery: {
+      title: "Punimet Tona",
+      description:
+        "Shikoni transformimet tona më të fundit dhe rezultatet reale tek klientët tanë. Klikoni mbi foto për të parë galerinë e plotë.",
+      clickToView: "Kliko për të parë",
+      tabs: {
+        browDesign: "Dizajn i Vetullave",
+        microblading: "Microblading",
+        browTinting: "Ngjyrosje Vetullash",
+        browThreading: "Formësim me Fije",
+      },
+    },
+    videos: {
+      title: "Na shikoni në veprim",
+      subtitle: "Punë dhe trajnim",
+    },
+
+    // ⭐ UPDATED ALBANIAN COURSES SECTION ⭐
+    courses: {
+      title: "Kurse & Trajnime Profesionale",
+      description:
+        "Mësoni nga ekspertët dhe nisni karrierën tuaj në artin e vetullave. Ofronim trajnime të plota për çdo nivel.",
+      learnMore: "Mëso Më Shumë",
+      certificate: "Certifikatë e Përfshirë",
+      smallGroups: "Grupe të Vogla",
+
+      individual: {
+        title: "Kurs Individual",
+        description:
+          "Trajnim 1-me-1 i personalizuar sipas nivelit, ritmit dhe qëllimeve tuaja. Ideal për ata që duan vëmendje maksimale dhe progres të shpejtë.",
+        duration: "Orar fleksibël – 1:1",
+      },
+
+      group: {
+        title: "Kurs në Grup të Vogël",
+        description:
+          "Mësoni në një grup të vogël, me shumë ushtrime praktike dhe feedback. I përsosur për shoqe ose kolege që duan të trajnohen së bashku.",
+        duration: "Data fikse – grupe të vogla",
+      },
+    },
+
+    contact: {
+      title: "Na Kontaktoni",
+      description:
+        "Gati për të transformuar vetullat tuaja? Kontaktoni për të rezervuar takimin.",
+      location: "Adresa",
+      locationText: "Rr. Kerem Lëton - Prishtine (Afër Rr. Muharrem Fejza)",
+      phone: "Telefoni",
+      email: "Email",
+      hours: "Orari",
+      mondayFriday: "E hënë - E premte: 10:00 - 18:00",
+      saturday: "E shtunë: 10:00 - 16:00",
+      sunday: "E diel: Mbyllur",
+      name: "Emri",
+      emailLabel: "Email",
+      phoneLabel: "Telefoni",
+      service: "Shërbimi i dëshiruar",
+      message: "Mesazhi",
+      namePlaceholder: "Emri juaj",
+      emailPlaceholder: "juaji@email.com",
+      phonePlaceholder: "+383 (0) 49 855 652",
+      messagePlaceholder: "Na tregoni çfarë rezultati kërkoni...",
+      send: "Dërgo Mesazhin",
+      sending: "Duke dërguar...",
+      success: "Faleminderit! Do t'ju kontaktojmë së shpejti.",
+      required: " *",
+      services: {
+        "eyebrow-design": "Dizajn i Vetullave",
+        microblading: "Microblading",
+        "brow-tinting": "Ngjyrosje Vetullash",
+        "brow-threading": "Formësim me Fije",
+        consultation: "Konsultim Falas",
+      },
+    },
+
+    footer: {
+      description: "Duke krijuar vetulla të përsosura me art dhe stil të personalizuar që nga viti 2014.",
+      quickLinks: "Lidhje të Shpejta",
+      followUs: "Na Ndiqni",
+      copyright: "Të gjitha të drejtat e rezervuara.",
+    },
+
+    location: {
+      title: "Na Gjeni",
+      description:
+        "Jemi në zemër të qytetit — ejani dhe zbuloni artin e vetullave perfekte.",
+      mapTitle: "Vendndodhja jonë",
+      visitTitle: "Vizitoni Studion",
+      visitSubtitle: "Na gjeni lehtë",
+      salonName: "Brows by Armira Studio",
+      address: "Rr. Kerem Lëton - Prishtine (Afër Rr. Muharrem Fejza)",
+      phoneLabel: "Telefoni",
+      phoneDisplay: "+383 (0) 49 855 652",
+      phoneLink: "tel:+383 (0) 49 855 652",
+      emailLabel: "Email",
+      emailDisplay: "malokajarmira@gmail.com",
+      emailLink: "mailto:malokajarmira@gmail.com",
+      hoursLabel: "Orari i Punës",
+      hours:
+        "E hënë–E premte: 09:00 – 19:00<br />E shtunë: 10:00 – 17:00<br />E diel: Mbyllur",
+      bookButton: "Rezervo Vizitën",
+    },
   },
 }
-
-};

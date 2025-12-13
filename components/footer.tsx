@@ -33,14 +33,14 @@ export function Footer() {
           <div>
             <h4 className="font-display font-bold text-primary mb-4">{t("footer.followUs")}</h4>
             <div className="space-y-2">
-              <a href="https://instagram.com" className="block text-cream/80 hover:text-cream transition-colors">
+              <a href="https://www.instagram.com/browsbyarmira.studio/" className="block text-cream/80 hover:text-cream transition-colors">
                 Instagram
               </a>
-              <a href="https://facebook.com" className="block text-cream/80 hover:text-cream transition-colors">
+              <a href="https://www.facebook.com/BrowsbyArmira" className="block text-cream/80 hover:text-cream transition-colors">
                 Facebook
               </a>
-              <a href="https://pinterest.com" className="block text-cream/80 hover:text-cream transition-colors">
-                Pinterest
+              <a href="https://wa.me/38349855652" className="block text-cream/80 hover:text-cream transition-colors">
+                WhatsApp
               </a>
             </div>
           </div>

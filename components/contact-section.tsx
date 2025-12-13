@@ -1,9 +1,10 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { useLanguage } from "@/lib/language-context"
+
+const FORM_ENDPOINT = "https://formspree.io/f/xnnelwrz"
 
 export function ContactSection() {
   const { t } = useLanguage()
@@ -26,17 +27,32 @@ export function ContactSection() {
     }))
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitStatus("idle")
 
-    setTimeout(() => {
-      setSubmitStatus("success")
-      setFormData({ name: "", email: "", phone: "", service: "eyebrow-design", message: "" })
+    try {
+      const formEl = e.currentTarget
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(formEl),
+      })
+
+      if (res.ok) {
+        setSubmitStatus("success")
+        setFormData({ name: "", email: "", phone: "", service: "eyebrow-design", message: "" })
+        formEl.reset()
+        setTimeout(() => setSubmitStatus("idle"), 3000)
+      } else {
+        setSubmitStatus("error")
+      }
+    } catch {
+      setSubmitStatus("error")
+    } finally {
       setIsSubmitting(false)
-
-      setTimeout(() => setSubmitStatus("idle"), 3000)
-    }, 1000)
+    }
   }
 
   return (
@@ -54,18 +70,21 @@ export function ContactSection() {
               <h3 className="text-lg font-display font-bold text-foreground mb-2">📍 {t("contact.location")}</h3>
               <p className="text-muted-foreground">{t("contact.locationText")}</p>
             </div>
+
             <div>
               <h3 className="text-lg font-display font-bold text-foreground mb-2">📱 {t("contact.phone")}</h3>
-              <a href="tel:+1234567890" className="text-primary hover:text-secondary transition-colors">
-                (123) 456-7890
+              <a href="tel:+38349855652" className="text-primary hover:text-secondary transition-colors">
+                +383 49 855 652
               </a>
             </div>
+
             <div>
               <h3 className="text-lg font-display font-bold text-foreground mb-2">📧 {t("contact.email")}</h3>
-              <a href="mailto:hello@armira.studio" className="text-primary hover:text-secondary transition-colors">
-                hello@armira.studio
+              <a href="mailto:malokajarmira@gmail.com" className="text-primary hover:text-secondary transition-colors">
+                malokajarmira@gmail.com
               </a>
             </div>
+
             <div>
               <h3 className="text-lg font-display font-bold text-foreground mb-4">⏰ {t("contact.hours")}</h3>
               <div className="space-y-1 text-muted-foreground text-sm">
@@ -83,6 +102,15 @@ export function ContactSection() {
                 ✓ {t("contact.success")}
               </div>
             )}
+
+            {submitStatus === "error" && (
+              <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
+                ✕ Something went wrong. Please try again.
+              </div>
+            )}
+
+            {/* Optional: email subject line in Formspree */}
+            <input type="hidden" name="_subject" value="New website contact form submission" />
 
             <div>
               <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
