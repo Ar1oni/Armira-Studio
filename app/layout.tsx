@@ -14,26 +14,22 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
-  title: 'Armira Studio | Expert Brow Design',
+  title: 'Armira Studio',
   description: 'Discover the art of perfect brows at Armira Studio. Expert eyebrow shaping, microblading, and brow design services.',
   generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+icons: {
+  icon: [
+    {
+      url: '/favicon.ico',
+      media: '(prefers-color-scheme: light)',
+    },
+    {
+      url: '/favicon.ico',
+      media: '(prefers-color-scheme: dark)',
+    },
+  ],
+}
+
 }
 
 export default function RootLayout({
